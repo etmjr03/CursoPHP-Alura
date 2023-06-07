@@ -1,6 +1,6 @@
-Curso PHP - Alura
+<h1>Curso PHP - Alura</h1>
 
-## configuração
+## Configuração
 
 - Link de instalação: https://www.php.net/manual/pt_BR/install.php
 - Arquivos importantes:
