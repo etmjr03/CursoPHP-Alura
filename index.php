@@ -1,6 +1,11 @@
 <?php 
 
+echo '<link rel="stylesheet" href="style.css">';
+
+echo '<div class="container">';
+
 // tipos primitivos do PHP
+echo '<h3>tipos primitivos do PHP</h3>';
 
 $nome = 'juninho';
 $idade = 24;
@@ -21,3 +26,61 @@ foreach($prints as $values) {
     $tipoDeDado = gettype($values);
     echo "<br> tipo de dado é: " .$tipoDeDado;
 }
+
+echo '<br>';
+
+// for e array comum ou numérico
+echo '<h3>Laço de repetição for, foreach</h3>';
+echo '<h4>For</h4>';
+
+$array = [1, 2, 3, 4, 5];
+
+for($i = 0; $i < count($array); $i++) {
+    echo $array[$i] . PHP_EOL;
+}
+
+echo '<pre>';
+print_r($array);
+echo '</pre>';
+
+//array associativo
+echo '<h4>Array associativo</h4>';
+
+$juninho = [
+    'nome' => 'juninho',
+    'idade' => 24
+];
+
+$ana = [
+    'nome' => 'ana',
+    'idade' => 23
+];
+
+$maria = [
+    'nome' => 'maria',
+    'idade' => 24
+];
+
+$pessoas = [
+    $juninho,
+    $ana,
+    $maria
+];
+
+echo '<pre>';
+print_r($pessoas);
+echo '</pre>';
+
+for($i = 0; $i < count($pessoas); $i++) {
+    echo '<br>' .$pessoas[$i]['nome'] . PHP_EOL;
+}
+
+echo '<h4>Foreach</h4>';
+
+foreach($pessoas as $conta) {
+    echo '<pre>';
+    print_r($conta['nome']);
+    echo '</pre>';
+}
+
+echo '</div>';
