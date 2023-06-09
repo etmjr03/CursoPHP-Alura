@@ -83,4 +83,16 @@ foreach($pessoas as $conta) {
     echo '</pre>';
 }
 
+// adicionando itens em um array associativo
+echo '<h4>Adicionando valores em um array associativo</h4>';
+
+$pessoas[] = [
+    'nome' => 'luis',
+    'idade' => 25
+];
+
+echo '<pre>';
+print_r($pessoas);
+echo '</pre>';
+
 echo '</div>';
