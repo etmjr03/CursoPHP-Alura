@@ -95,4 +95,21 @@ echo '<pre>';
 print_r($pessoas);
 echo '</pre>';
 
+// exemplo de tipos de chaves de um array
+
+$tiposDeChaves = [
+    1 => 'a',
+    '1' => 'b',
+    1.5 => 'c',
+    true => 'd',
+    'teste' => 'e'
+];
+
+// O array só aceita em suas chaves int ou string, caso utilize alguns outros tipos de dados,
+// ele irá tentar converter para int como nos casos do exemplo acima
+
+echo '<pre>';
+print_r($tiposDeChaves);
+echo '</pre>';
+
 echo '</div>';

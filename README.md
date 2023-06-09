@@ -13,3 +13,10 @@
 - Terminal interativo (Interactive Shell), para utilizar esse modo digite -> php -a (nesse modo é necessário utilizar os padrões do PHP, como o caso de ; no final das instruções e linhas)
 - Sair do moto interativo do PHP no propet digite -> quit
 - Executar um arquivo php faça o seguinte -> navegue até o diretório onde o arquivo está e digite o comando php (nomedoarquivo.php) e dê enter!
+
+## Conceitos
+
+- Variáveis
+- Tipos de dados
+- Loop
+- Array => arrays numérios são os arrays padrão, onde o php atribui um valor numério iniciando no 0 ao índica do array, arrays associativos é quando utilizamos uma referência específica para o valor dessa chave, como por exempo nome, idade.
