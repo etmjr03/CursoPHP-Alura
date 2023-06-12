@@ -1,142 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
+    crossorigin="anonymous">
+</head>
+<body>
 <?php 
+    echo '<link rel="stylesheet" href="index.css">';
+    ?>
 
-echo '<link rel="stylesheet" href="style.css">';
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Funções
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Produtos</a></li>
+                <li><a class="dropdown-item" href="#">Vendas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Status</a></li>
+            </ul>
+            </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Pesquise o produto" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+        </form>
+        </div>
+    </div>
+    </nav>
 
-echo '<div class="container">';
-
-// tipos primitivos do PHP
-echo '<h3>tipos primitivos do PHP</h3>';
-
-$nome = 'juninho';
-$idade = 24;
-$porcentagem = 99.99;
-$jogos = ['LOL', 'CS', 'Sea Of Thieves'];
-$gamer = true;
-$prints = [
-    $nome,
-    $idade,
-    $porcentagem,
-    $jogos,
-    $gamer
-];
-
-echo "A ordem dos dados são: juninho, 24, 99.99, jogos é um array, true";
-
-foreach($prints as $values) {
-    $tipoDeDado = gettype($values);
-    echo "<br> tipo de dado é: " .$tipoDeDado;
-}
-
-echo '<br>';
-
-// for e array comum ou numérico
-echo '<h3>Laço de repetição for, foreach</h3>';
-echo '<h4>For</h4>';
-
-$array = [1, 2, 3, 4, 5];
-
-for($i = 0; $i < count($array); $i++) {
-    echo $array[$i] . PHP_EOL;
-}
-
-echo '<pre>';
-print_r($array);
-echo '</pre>';
-
-//array associativo
-echo '<h4>Array associativo</h4>';
-
-$juninho = [
-    'nome' => 'juninho',
-    'idade' => 24
-];
-
-$ana = [
-    'nome' => 'ana',
-    'idade' => 23
-];
-
-$maria = [
-    'nome' => 'maria',
-    'idade' => 24
-];
-
-$pessoas = [
-    $juninho,
-    $ana,
-    $maria
-];
-
-echo '<pre>';
-print_r($pessoas);
-echo '</pre>';
-
-for($i = 0; $i < count($pessoas); $i++) {
-    echo '<br> nomes: ' .$pessoas[$i]['nome'] . PHP_EOL;
-}
-
-echo '<h4>Foreach</h4>';
-
-foreach($pessoas as $conta) {
-    echo '<pre>';
-    print_r($conta['nome']);
-    echo '</pre>';
-}
-
-// adicionando itens em um array associativo
-echo '<h4>Adicionando valores em um array associativo</h4>';
-
-$pessoas[] = [
-    'nome' => 'luis',
-    'idade' => 25
-];
-
-echo '<pre>';
-print_r($pessoas);
-echo '</pre>';
-
-echo '<h3>Array normal de times</h3>';
-$times = [
-    'gremio',
-    'cruzeiro',
-    'flamengo'
-];
-
-$times[] = 'inter';
-
-echo '<pre>';
-print_r($times);
-echo '</pre>';
-
-$timeCampeao = [
-    ['nome' => 'gremio',
-    'campeao' => true]
-];
-
-$timeCampeao[] = [
-    'nome' => 'cruzeiro',
-    'campeao' => false
-];
-
-echo '<pre>';
-print_r($timeCampeao);
-echo '</pre>';
-
-// exemplo de tipos de chaves de um array
-
-$tiposDeChaves = [
-    1 => 'a',
-    '1' => 'b',
-    1.5 => 'c',
-    true => 'd',
-    'teste' => 'e'
-];
-
-// O array só aceita em suas chaves int ou string, caso utilize alguns outros tipos de dados,
-// ele irá tentar converter para int como nos casos do exemplo acima
-
-echo '<pre>';
-print_r($tiposDeChaves);
-echo '</pre>';
-
-echo '</div>';
+    <div class="container">
+        <h1 class="text-center">Bem-Vindo(a)!</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

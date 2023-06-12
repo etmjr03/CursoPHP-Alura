@@ -24,3 +24,7 @@ function letraMaiuscula(array &$conta) {
 
     return $conta['nome'];
 }
+
+function removeConta(array &$conta) {
+    unset($conta);
+}

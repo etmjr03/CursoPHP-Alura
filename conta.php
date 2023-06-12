@@ -1,6 +1,6 @@
 <?php
 
-include 'funcoes.php';
+require_once 'funcoes.php';
 echo '<link rel="stylesheet" href="style.css">';
 echo '<div class="container">';
 // Funções para exemplos de uma conta
@@ -40,4 +40,28 @@ echo '<pre>';
 print_r($conta);
 echo '</pre>';
 
+echo "<h4>Função para remover uma conta</h4>";
+
+$conta['02-c'] = removeConta($conta['02-c']);
+
+echo '<pre>';
+print_r($conta);
+echo '</pre>';
+
 echo "</div>";
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center" >Teste</h1>
+    </div>
+</body>
+</html>
