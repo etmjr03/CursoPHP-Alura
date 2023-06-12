@@ -20,3 +20,7 @@
 - Tipos de dados
 - Loop
 - Array => arrays numérios são os arrays padrão, onde o php atribui um valor numério iniciando no 0 ao índica do array, arrays associativos é quando utilizamos uma referência específica para o valor dessa chave, como por exempo nome, idade.
+- Funções
+- Include => Gera warning, é utilizado pra quando o arquivo não é essêncial para o funcionamento
+- Require => é utilizado quando o arquivo é essencial, caso não encontre ele vai gerar um erro na linha onde chama ele "require_once" inclui e verifica se já não foi incruído.
+- Passagem por referência & antes da variável do parâmetro, indica que irá usar a variável verdadeira como referencia

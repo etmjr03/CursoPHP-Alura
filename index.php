@@ -72,7 +72,7 @@ print_r($pessoas);
 echo '</pre>';
 
 for($i = 0; $i < count($pessoas); $i++) {
-    echo '<br>' .$pessoas[$i]['nome'] . PHP_EOL;
+    echo '<br> nomes: ' .$pessoas[$i]['nome'] . PHP_EOL;
 }
 
 echo '<h4>Foreach</h4>';
