@@ -95,6 +95,33 @@ echo '<pre>';
 print_r($pessoas);
 echo '</pre>';
 
+echo '<h3>Array normal de times</h3>';
+$times = [
+    'gremio',
+    'cruzeiro',
+    'flamengo'
+];
+
+$times[] = 'inter';
+
+echo '<pre>';
+print_r($times);
+echo '</pre>';
+
+$timeCampeao = [
+    ['nome' => 'gremio',
+    'campeao' => true]
+];
+
+$timeCampeao[] = [
+    'nome' => 'cruzeiro',
+    'campeao' => false
+];
+
+echo '<pre>';
+print_r($timeCampeao);
+echo '</pre>';
+
 // exemplo de tipos de chaves de um array
 
 $tiposDeChaves = [
