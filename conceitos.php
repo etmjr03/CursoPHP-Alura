@@ -155,4 +155,12 @@ echo '<pre>';
 print_r($tiposDeChaves);
 echo '</pre>';
 
+$minhaIdade = 17;
+
+echo "Para entrar na festa, você precisa ter mais que 18 anos! <br>";
+
+$mensagem = $minhaIdade >= 18 ? "Você tem $minhaIdade, pode entrar!" : "Você não pode entrar, pois sua idade é: $minhaIdade";
+
+echo $mensagem;
+
 echo '</div>';

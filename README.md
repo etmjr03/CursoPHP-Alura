@@ -18,6 +18,7 @@
 
 - Variáveis
 - Tipos de dados
+- Verificações: '||' e 'or' significam 'ou' / '&&' 'and' significa 'e'
 - Loop
 - Array => arrays numérios são os arrays padrão, onde o php atribui um valor numério iniciando no 0 ao índica do array, arrays associativos é quando utilizamos uma referência específica para o valor dessa chave, como por exempo nome, idade.
 - Funções
