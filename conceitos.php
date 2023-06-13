@@ -155,6 +155,8 @@ echo '<pre>';
 print_r($tiposDeChaves);
 echo '</pre>';
 
+echo '<h3>If Ternário</h3>';
+
 $minhaIdade = 17;
 
 echo "Para entrar na festa, você precisa ter mais que 18 anos! <br>";
@@ -162,5 +164,17 @@ echo "Para entrar na festa, você precisa ter mais que 18 anos! <br>";
 $mensagem = $minhaIdade >= 18 ? "Você tem $minhaIdade, pode entrar!" : "Você não pode entrar, pois sua idade é: $minhaIdade";
 
 echo $mensagem;
+
+echo '<h3>If, else, else if</h3>';
+
+$acompanhanteMaior = true;
+
+if($minhaIdade >= 18) {
+    echo "Você pode entrar, pois você tem $minhaIdade anos.";
+} elseif ($minhaIdade <= 18 && $acompanhanteMaior == true) {
+    echo "Você pode entrar, pois apesar da sua idade ser $minhaIdade, você está acompanhado!";
+} else {
+    echo "Você não pode entrar!";
+}
 
 echo '</div>';
